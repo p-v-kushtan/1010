@@ -1,0 +1,22 @@
+-
+  var blocks = [
+    {headline: "'bomb-lesson'", mod: "bomb" , subline: " ", text: "Для тех, кто ценит быстроту и уединённость: bomb-lesson позволяет один раз составить грамматическую карту основ языка #mgramap на одном листе - дальше вы сможете тренироваться самостоятельно, следуя трёхмесячному планеру."},
+    {headline: "'basic 1.0' + 'basic 2.0'", mod: "basic", subline: " ", text: "Два базовых курса: включают в себя разовый 'bomb-lesson' и грамматические структуры. Для тех, кто хочет сразу иметь чёткий план обучения и всё необходимое, чтобы его полностью пройти. К каждому видео - скрипт с тренировкой, ревью к ней и (при желании) саппорт ментора."},
+    {headline: "'tenses'", mod: "tenses" , subline: " ", text: "Курс, специально созданный для тех, кто хочет понять время в языке: раскладываем все времена на одном листе, находим разницу между ними и детально углубляемся в каждое. + скрипт с тренировкой и ревью к ней."}
+  ]
+
+.services
+  .services__title.translate Курсы
+  .services__line_wrapper.line.line_services
+    .services__box.line_box
+      each block in blocks
+        .line_block.services__block(class="services__block--"+block.mod)
+          .services__container
+            .pic_hor.services__img(class="services__img--"+block.mod)
+            .shadow_hor.services__shadow(class="services__shadow--"+block.mod)
+          .services__wrapper(class="services__wrapper--"+block.mod)
+            .tagline.services__headline= block.headline
+            .subheading.services__subline= block.subline
+            .paragraph.services__text(class="services__text--"+block.mod)= block.text
+            include page_link
+            +page_link('more...','#')

@@ -1,0 +1,124 @@
+.services {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    margin-top: 100px;
+    height: 300px;
+    position: relative;
+    z-index: -1;
+    line-height: 70px;
+
+    &:after {
+      content: "Courses";
+      font-size: 45px;
+      font-weight: 300;
+      text-align: center;
+      color: var(--main-basic-color);
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -150%);
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__block--bomb {
+    margin-top: 100px;
+  }
+
+  &__block--basic {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  &__wrapper--basic {
+    margin-left: 0;
+  }
+
+  &__headline {
+    margin-bottom: 20px;
+  }
+
+  &__subline {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    min-width: 380px;
+  }
+
+  &__text--basic {
+    text-align: right;
+  }
+
+  &__link {
+    color: var(--main-basic-color);
+    width: 170px;
+    height: 37px;
+    background: #e4dfdc;
+    border: #e4dfdc;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__link:visited {
+    color: var(--main-basic-color);
+  }
+
+  &__img {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__img--bomb {
+    background-image: url(../img/mentoring.jpg);
+    background-size: cover;
+  }
+
+  &__img--basic {
+    background-image: url(../img/patreon.jpg);
+    background-size: cover;
+    margin-left: 50px;
+  }
+
+  &__img--tenses {
+    background-image: url(../img/article3.jpeg);
+    background-size: cover;
+  }
+
+  &__shadow {
+    position: relative;
+    z-index: 2;
+    transform: translate(-40px, -230px);
+  }
+
+  &__shadow--basic {
+    transform: translate(85px, -230px);
+  }
+
+}

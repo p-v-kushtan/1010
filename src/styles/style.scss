@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+
+/* common styles */
+@import "base.scss";
+@import "responsive.scss";
+
+/* components */
+@import "components/block.scss";
+@import "components/dosed.scss";
+@import "components/footer.scss";
+@import "components/form.scss";
+@import "components/header.scss";
+@import "components/page_link.scss";
+@import "components/promo.scss";
+@import "components/review.scss";
+@import "components/subtitle.scss";
+@import "components/nav.scss";
+@import "components/desc.scss";
+@import "components/slogan.scss";
+@import "components/reference.scss";
+@import "components/intro.scss";
+@import "components/details.scss";
+@import "components/video.scss";
+@import "components/services.scss";
+@import "components/popup.scss";
+@import "components/popup_workout.scss";
+@import "components/popup_basic.scss";
+@import "components/popup_bomb.scss";
+@import "components/popup_tenses.scss";
+@import "components/page_redirect.scss";
+@import "components/blog.scss";
+@import "components/article.scss";
+@import "components/courses.scss";

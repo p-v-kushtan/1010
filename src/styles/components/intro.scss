@@ -1,0 +1,64 @@
+.intro {
+  width: 100%;
+  height: 100%;
+
+  &__quote {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__quote_text {
+    text-align: right;
+    min-height: 186px;
+    max-width: 674px;
+    margin-right: 61px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 30px;
+  }
+
+  &__quote_subtitle {
+    text-align: right;
+    margin: 30px 100px 30px 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+    width: 50%;
+  }
+
+  &__text {
+    margin-right: 50px;
+  }
+
+  &__headline {
+    margin: 50px 0;
+  }
+
+  &__headline_text {
+    max-width: 315px;
+    min-height: 147px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 264px;
+    height: 390px;
+    box-shadow: 20px 20px var(--second-light-color);
+  }
+
+}

@@ -1,0 +1,16 @@
+doctype html
+html
+  include components/head
+  +head("О нас")
+  body
+    include components/header
+    +header_title("about.")
+    main
+      include components/intro
+      include components/details
+      include components/courses
+    include components/footer
+    include components/popup_tenses
+    include components/popup_basic
+    include components/popup_bomb
+    script(src="../js/app.min.js")

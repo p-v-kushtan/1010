@@ -1,0 +1,11 @@
+doctype html
+html
+  include components/head
+  +head("Отзывы.")
+  body
+    include components/header
+    +header_title("reviews.")
+    include components/review
+    include components/form
+    +textarea(" Что вы про нас думаете? [Чур только честно! Самообман у нас по пятницам.] P.S. You can написать нам здесь, либо в instagram и отправить ссылочку. ")
+    include components/footer

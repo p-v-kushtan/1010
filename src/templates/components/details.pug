@@ -1,0 +1,26 @@
+-
+  var blocks = [
+    {link: "theory.html", number: "01", headline: "о теории.", mod: "theory" , text: "Суть mg. - в простоте усвоения грамматики: 1. Составление всех основ в виде карты на одном листе (это мы делаем на Bomb-lesson) 2. Cкачивайте грамматический планер и отмечайте свой прогресс. Изучайте новые грам.темы с помощью вебинаров и видео по теории. 3. Сразу повышайте свой уровень сами: тренируйте полученную базу с помощью дозы и языковой среды.  А если вам потребуется помощь - не стесняйтесь записываться на вебинары и курсы!"},
+    {link: "dosed.html", number: "02", headline: "о дозе.", mod: "dosed" , text: "Учить новый язык и, тем более, практиковать - это всегда дискомфорт. И поэтому лучше всего это делать с помощью любимых занятий: кино, книги, музыка... выбирайте то, что любите больше всего и тренируйтесь - страница dosed создана именно для этого."},
+    {link: "article.html", number: "03", headline: "о среде.", mod: "leaf" , text: "Можно бесконечно говорить о пользе теории и её практики, но лучше всего - оказаться в языковой среде: например, в Бостоне. И вот уже через месяц без лишних усилий вы поймёте на новом языке то, что раньше не понимали. Хорошая новость: нам всем не обязательно лететь в Бостон. Можно устроить все у себя дома. Как? Про это у нас есть целая статья: enjoy!"}
+  ]
+
+.details
+  .details__wrap
+    .details__title.translate Что вас останавливает?
+  .details__subtitle.subheading надеемся, что уже ничего.
+  .details__line_wrapper.line
+    .details__box.line_box
+      each block in blocks
+        .details__block.line_block
+          .details__container(class="details__container--"+block.mod)
+            .details__boxing(class="details__container--"+block.mod)
+              .paragraph.details__text(class="details__text--"+block.mod)= block.text
+                include page_redirect
+                +page_redirect('-->',block.link)
+            .details__boxer
+              .details__wrapper(class="details__wrapper--"+block.mod)
+                .plate.details__number= block.number
+                .tagline.details__headline= block.headline
+              .details__images
+                .pic_vertical.details__img(class="details__img--"+block.mod)

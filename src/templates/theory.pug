@@ -1,0 +1,12 @@
+doctype html
+html
+  include components/head
+  +head("теория")
+  body
+    include components/header
+    +header_title("theory.")
+    main
+      include components/video
+    include components/footer
+    //include components/popup_workout
+    script(src="../js/app.min.js")

@@ -1,0 +1,36 @@
+-
+  var columns = [
+    {title: "'когда'", mod: "когда"},
+    {title: "определённый артикль", mod: "артикль1"},
+    {title: "'ночь'", mod: "ночь"},
+    {title: "to have помогает времени, не переводится", mod: "tohave"},
+    {title: "'пришла'", mod: "пришла"},
+    {title: "Present Simple", mod: "Simple"},
+    {title: "Present Perfect", mod: "Perfect"},
+    {title: "&", mod: "and"},
+    {title: "определённый артикль", mod: "артикль2"},
+    {title: "'земля'", mod: "земля"},
+    {title: "to be", mod: "tobe"},
+    {title: "'темна'", mod: "темна"}
+  ]
+
+.desc
+  .desc__wrap
+    h3.desc__title LANGUAGE ANATOMY:
+    h4.desc__titleline.paragraph Анатомия языка на примере первых строк песни Ben E. King “Stand by me”
+    audio.desc__audio(controls="controls")
+      source(src="../audio/myAudio.mp3" type="audio/mpeg")
+      source(src="../audio/myAudio.ogg" type="audio/ogg")
+    .desc__content
+      .desc__wrapper
+        each column in columns
+          .desc__box(class="desc__box--"+column.mod)
+            .desc__caption(class="desc__caption--"+column.mod)= column.title
+      .desc__container
+        .desc__item “When the night has come, 
+        .desc__thing and the land is dark.”
+      .desc__bracket
+      .desc__bracketing
+    .desc__subtitle.translate Хотели бы также?
+    //.subheading.desc__subline Хотели бы также?
+    

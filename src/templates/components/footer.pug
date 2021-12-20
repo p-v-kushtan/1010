@@ -1,0 +1,24 @@
+-
+  var list = [
+    {text: "Главная.", link: "index.html"},
+    {text: "О нас.", link: "about.html"},
+    {text: "Блог.", link: "blog.html"},
+    {text: "Теория.", link: "theory.html"},
+    {text: "Доза.", link: "dosed.html"}
+  ]
+
+footer.footer
+  .footer__line
+  .footer__box
+    .footer__wrapper
+      a.footer__title(href="index.html" target="_self") mg.
+      ul.footer__socials
+        li.footer__item
+          a.footer__button_insta(href="https://www.instagram.com/" target="_blank")
+        li.footer__item
+          a.footer__button_ohana(href="#" target="_blank")
+    ul.footer__list
+      each obj in list
+        li.footer__item.tagsub
+          a.footer__link(href=obj.link target="_self")= obj.text
+  .footer__line

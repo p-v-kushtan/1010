@@ -1,0 +1,90 @@
+.block {
+  display: block;
+  width: 100%;
+
+  &__container {
+    min-height: 46.9vh;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 100px 0;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+  }
+
+  &__btn {
+    margin: 5px 0;
+  }
+
+  &__link {
+    border: 6px double black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-basic-color);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &__link--theory {
+    background: url(../img/theory.png) center center no-repeat;
+    background-size: 80px 80px;
+  }
+
+  &__link--theory:hover {
+    background: url(../img/theory__hover.png) center center no-repeat;
+    background-size: 80px 80px;
+    background-color: var(--main-basic-color);
+    transition: 0.48s;
+  }
+
+  &__link--dosed {
+    background: url(../img/dosed.png) center center no-repeat;
+    background-size: 80px 80px;
+  }
+
+  &__link--dosed:hover {
+    background: url(../img/dosed__hover.png) center center no-repeat;
+    background-size: 80px 80px;
+    background-color: var(--main-basic-color);
+    transition: 0.48s;
+  }
+
+  &__link--leaf {
+    background: url(../img/leaf.png) center center no-repeat;
+    background-size: 80px 80px;
+  }
+
+  &__link--leaf:hover {
+    background: url(../img/leaf__hover.png) center center no-repeat;
+    background-size: 80px 80px;
+    background-color: var(--main-basic-color);
+    transition: 0.48s;
+  }
+
+  &__subtitle {
+    white-space: nowrap;
+  }
+
+  &__text {
+    margin-top: 60px;
+  }
+
+  &__line {
+    background-color: var(--second-light-color);
+    color: var(--second-light-color);
+    width: 3px;
+    height: 110px;
+  }
+
+}

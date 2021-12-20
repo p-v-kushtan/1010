@@ -1,0 +1,57 @@
+.popup_bomb.js-popup
+  .popup_bomb__wrapper
+    .popup_bomb__box
+      btn.popup_bomb__cross.js-popup-cross
+    .popup_bomb__title 'bomb-lesson'
+    .popup_bomb__content
+      .popup_bomb__container
+        .popup_bomb__can
+          .popup_bomb__element
+            .popup_bomb__boxing 01.
+            .popup_bomb__text Сущность языка: грамматика и лексика [их назначение и связь друг с другом]
+          .popup_bomb__element
+            .popup_bomb__boxing 02.
+            .popup_bomb__text Составляем карту основ языка
+              .popup_bomb__subscript #mgramap :
+        .popup_bomb__basket
+          .popup_bomb__can--option
+            .popup_bomb__element
+              .popup_bomb__plus 
+              .popup_bomb__desc Планер для самостоятельного изучения языка на три месяца
+            .popup_bomb__element
+              .popup_bomb__plus 
+              .popup_bomb__desc Чеклист по грамматике
+            .popup_bomb__element
+              .popup_bomb__plus 
+              .popup_bomb__desc Лист неправильных глаголов
+                .popup_bomb__postscript (в порядке лёгком для запоминания)
+          .popup_bomb__can--option
+            ul.popup_bomb__list
+              li.popup_bomb__item nouns [существительные]
+              li.popup_bomb__item verbs [глаголы]:
+                .popup_bomb__subscript модальные + сильные
+              li.popup_bomb__item tenses [времена] :
+              li.popup_bomb__item--opptional Present Simple
+              li.popup_bomb__item--opptional Present Continuous
+              li.popup_bomb__item--opptional Past Simple
+              li.popup_bomb__item--opptional Future Simple
+      .popup_bomb__boxer
+        .popup_bomb__can--optional
+          .popup_bomb__subtitle price:
+          .popup_bomb__frame
+            .popup_bomb__subline Без куратора: 500р
+            .popup_bomb__postscript Доступ к видео и скриптам.
+          .popup_bomb__frame
+            .popup_bomb__subline С куратором: 1300р
+            .popup_bomb__postscript Индивидуальный урок с ментором.
+        .popup_bomb__can--optional
+          .popup_bomb__subtitle submit:
+          .popup_bomb__form
+            label.popup_bomb__label(for="email")
+            input.popup_bomb__input(type="email" name="email_address" placeholder="с куратором/ без" value="" onfocus="ClearText(this)")
+            label.popup_bomb__label(for="email")
+            input.popup_bomb__input(type="email" name="email_address" placeholder="time [время]" value="" onfocus="ClearText(this)")
+            label.popup_bomb__label(for="email")
+            input.popup_bomb__input(type="email" name="email_address" placeholder="@mail для связи" value="" onfocus="ClearText(this)")
+            button.popup_bomb__submit(type="button") SEND [отправить]
+          

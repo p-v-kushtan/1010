@@ -1,0 +1,96 @@
+:root {
+  --main-basic-color: #000000;
+  --main-light-color: #ffffff;
+  --second-basic-color: #ac9f8f;
+  --second-light-color: #e4dfdc;
+  --optional-light-color: #808080;
+  --optional-time-color: #ced2d2;
+  --popup: #1d1d1f;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family:  'Montserrat', sans-serif;
+}
+
+.paragraph {
+  color: var(--main-basic-color);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 30px;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.subheading {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.tagline {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.tagsub {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.translate {
+  text-align: center;
+  color: var(--second-light-color);
+  font-weight: 300;
+  font-size: 110px;
+}
+
+.plate {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--second-light-color);
+}
+
+.pic_vertical {
+  width: 264px;
+  height: 390px;
+}
+
+.pic_hor {
+  height: 264px;
+  width: 390px;
+}
+
+.line {
+  position: relative;
+}
+
+.line:before {
+  left: 50%;
+  content: "";
+  height: 100%;
+  width: 3px;
+  background-color: var(--second-light-color);
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  height: calc(100% - 232px);
+}
+
+.line_services:before {
+  top: 10px;
+  height: calc(100% - 10px);
+}
+
+.line_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

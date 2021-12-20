@@ -1,0 +1,12 @@
+mixin textarea(text)
+  form.form.form_review(method="post" action="send_mail.php")
+    // Mod
+    .form__wrap
+      .form__name
+        label.form__label_name(for="name")
+        input.form__area(id="name" type="text" name="first_name" placeholder="Ваше имя/ @insta/ кличка 😊" value="" required="")
+      .form__text
+        label.form__label_textarea(for="textarea")
+        textarea.form__textarea(id="textarea" placeholder=text name="comments")
+      .form__btn  
+        button.form__submit.button(type="submit") send.

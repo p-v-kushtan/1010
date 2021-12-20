@@ -1,0 +1,39 @@
+-
+  var blocks = [
+    {number: "01", headline: "Вся база", time: "59:32"},
+    {number: "02", headline: "to be", time: "04:23"},
+    {number: "03", headline: "a/the", time: "02:17"},
+    {number: "03", headline: "a/the", time: "02:17"},
+    {number: "03", headline: "a/the", time: "02:17"},
+    {number: "03", headline: "a/the", time: "02:17"},
+    {number: "03", headline: "a/the", time: "02:17"},
+    {number: "03", headline: "a/the", time: "02:17"},
+    {number: "04", headline: "Present Simple", time: "06:48"}
+  ]
+
+.video.video__line
+  .video__container
+    .video__box
+      .video__shadow
+        .video__quote.plate let's just start ...
+      .video__boxer
+        video.video__player(src="#" autoplay poster="../img/video_player.jpg" controls="controls")
+    .video__desc.paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci
+  .video__container
+    .video__box
+      .video__title_first.plate 01
+      .video__slider
+        //.video__slider_title.tagline база.
+        //здесь тоже массив для тайтлов?
+        ul.video__list
+          each block in blocks
+            li.video__item
+              .video__number= block.number
+              .video__headline= block.headline
+              a.video__time= block.time
+      //.video__workout
+        //.video__title_second.plate 02
+        //.video__wrapper
+          //.video__text.paragraph После просмотра видео вы можете приступить к этапу 02 и выполнить тренировку.
+          //include page_link
+          //+page_link('тренировка...','#')

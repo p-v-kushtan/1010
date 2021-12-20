@@ -1,0 +1,24 @@
+-
+  var blocks = [
+    {headline: "'bomb-lesson'", mod: "theory" , text: "Для тех, кто ценит быстроту и уединённость: bomb-lesson позволяет один раз составить грамматическую карту основ языка #mgramap на одном листе - дальше вы сможете тренироваться самостоятельно, следуя трёхмесячному планеру."},
+    {headline: "'basic 1.0' + 'basic 2.0'", mod: "dosed" , text: "Два базовых курса: включают в себя разовый 'bomb-lesson' и грамматические структуры. Для тех, кто хочет сразу иметь чёткий план обучения и всё необходимое, чтобы его полностью пройти. К каждому видео - скрипт с тренировкой, ревью к ней и (при желании) саппорт ментора."},
+    {headline: "'tenses'", mod: "leaf" , text: "Курс, специально созданный для тех, кто хочет понять время в языке: раскладываем все времена на одном листе, находим разницу между ними и детально углубляемся в каждое. + скрипт с тренировкой и ревью к ней."}
+  ]
+
+.courses
+  .courses__wrap
+    .courses__title.translate Курсы
+  .courses__line_wrapper.line
+    .courses__box.line_box
+      each block in blocks
+        .courses__block.line_block
+          .courses__container(class="courses__container--"+block.mod)
+            .courses__boxing(class="courses__container--"+block.mod)
+              .paragraph.courses__text(class="courses__text--"+block.mod)= block.text
+                include page_link
+                +page_link('more...','#')
+            .courses__boxer
+              .courses__wrapper(class="courses__wrapper--"+block.mod)
+                .tagline.courses__headline= block.headline
+              .courses__images
+                .courses__img(class="courses__img--"+block.mod)

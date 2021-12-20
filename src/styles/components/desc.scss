@@ -1,0 +1,314 @@
+.desc {
+  display: block;
+
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+  }
+
+  &__title {
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__titleline {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  &__audio:focus {
+    outline: none;
+    border: 1px solid var(--second-light-color);
+  }
+
+  &__content {
+    width: 660px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0 200px 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__caption--когда {
+    transform: translate(30px, 150px);
+  }
+
+  &__caption--когда:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--артикль1 {
+    transform: translateY(30px);
+    width: 150px;
+    text-align: center;
+  }
+
+  &__caption--артикль1:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 140px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--ночь {
+    transform: translate(-34px, 150px);
+  }
+
+  &__caption--ночь:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--tohave {
+    transform: translate(-50px, -10px);
+    width: 120px;
+    text-align: center;
+  }
+
+  &__caption--tohave:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 140px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--пришла {
+    transform: translate(-84px, 150px);
+  }
+
+  &__caption--пришла:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--Simple {
+    transform: translate(45px, 73px);
+  }
+
+  &__caption--Simple:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100px;
+    background-color: var(--second-light-color);
+  }
+
+  &__line--Simple {
+    height: 100px;
+  }
+
+  &__caption--Perfect {
+    flex-direction: column-reverse;
+    transform: translate(-350px, 186px);
+  }
+
+  &__line--Perfect {
+    height: 100px;
+  }
+
+  &__caption--Perfect:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--and {
+    flex-direction: column-reverse;
+    transform: translate(-173px, 162px);
+  }
+
+  &__caption--and:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--артикль2 {
+    flex-direction: column-reverse;
+    transform: translate(-200px, 220px);
+    width: 150px;
+    text-align: center;
+  }
+
+  &__caption--артикль2:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 140px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--земля {
+    transform: translate(-240px, 100px);
+    flex-direction: column-reverse;
+  }
+
+  &__caption--земля:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--tobe {
+    transform: translate(-235px, 219px);
+    flex-direction: column-reverse;
+  }
+
+  &__caption--tobe:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 140px;
+    background-color: var(--second-light-color);
+  }
+
+  &__caption--темна {
+    transform: translate(-225px, 100px);
+    flex-direction: column-reverse;
+  }
+
+  &__caption--темна:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: var(--second-light-color);
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__item {
+    font-weight: 300;
+    font-size: 27px;
+  }
+
+  &__thing {
+    font-weight: 300;
+    font-size: 27px;
+    margin-left: 13px;
+  }
+
+  &__bracket {
+    width: 290px;
+    height: 4px;
+    background-color: var(--second-light-color);
+    position: relative;
+    transform: translate(184px, -40px);
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 10px;
+      background-color: inherit;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 10px;
+      background-color: inherit;
+      transform: translateX(288px);
+    }
+  }
+
+  &__bracketing {
+    width: 370px;
+    height: 4px;
+    background-color: var(--second-light-color);
+    position: relative;
+    transform: translate(-150px, 10px);
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 10px;
+      background-color: inherit;
+      transform: translateY(-8px);
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 10px;
+      background-color: inherit;
+      transform: translate(366px, -8px);
+    }
+  }
+
+  &__subtitle {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+    position: relative;
+    line-height: 90px;
+    z-index: -1;
+    font-size: 150px;
+
+    &:after {
+      content: "Would you like the same?";
+      font-size: 45px;
+      font-weight: 300;
+      text-align: center;
+      color: var(--main-basic-color);
+      position: absolute;
+      z-index: 2;
+    }
+
+  }
+
+}

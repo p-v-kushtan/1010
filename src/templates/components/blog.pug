@@ -1,0 +1,68 @@
+-
+  var blocks = [
+    {tags: "Experience", caption: "Языковой барьер" , image: "../img/article1.jpg", date: "27 august 2020", text: "Lorem impsum em impsum  em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum ."},
+    {tags: "Grammar", caption: "Have и have got", image: "../img/article2.jpg", date: "27 august 2020", text: "Lorem impsum em impsum  em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum ."},
+    {tags: "Experience", caption: "Поэзия на изучаемом языке" , image: "../img/article3.jpeg", date: "27 august 2020", text: "Lorem impsum em impsum  em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum em impsum ."}
+  ]
+
+.blog
+  .blog__container
+    .blog__search
+      label.blog__label(for="search")
+      input.blog__input(type="search" name="Search" placeholder="Search..." value="" onfocus="ClearText(this)")
+    .blog__tags
+      ul.blog__list
+        li.blog__item
+          a.blog__link(href="#" target="_self") Experience
+        li.blog__item
+          a.blog__link(href="#" target="_self") Grammar
+      ul.blog__list
+        li.blog__item
+          a.blog__link(href="#" target="_self") Books & Films
+        li.blog__item
+          a.blog__link(href="#" target="_self") Recipes
+    .blog__posts
+      .blog__title Popular posts:
+      .blog__box
+        img.blog__img(src="../img/article1.jpg" alt="article wallpaper" width="100" height="60")
+        .blog__shortags
+          .blog__tag
+            a.blog__links(href="#" target="_self") Языковой барьер
+          .blog__date 27 october 2020
+      .blog__box
+        img.blog__img(src="../img/patreon.jpg" alt="article wallpaper" width="100" height="60")
+        .blog__shortags
+          .blog__tag
+            a.blog__links(href="#" target="_self") Как создать самому среду
+          .blog__date 27 october 2020
+      .blog__box
+        img.blog__img(src="../img/langbook.jpg" alt="article wallpaper" width="100" height="60")
+        .blog__shortags
+          .blog__tag
+            a.blog__links(href="#" target="_self") Времена во всех языках
+          .blog__date 27 october 2020
+  .blog__section
+    .blog__article
+      each block in blocks
+        .blog__boxer
+          .blog__name
+            a.blog__links(href="article.html" target="_self")= block.tags
+            a.blog__caption(href="article.html" target="_self")= block.caption
+            .blog__date= block.date
+        a.blog__image(href="article.html" target="_self")
+          img.blog__poster(src= block.image alt="article wallpaper" width="409" height="230")
+        .blog__text= block.text
+        a.blog__continue(href="article.html" target="_self") Continue Reading ...
+    //.blog__pages
+      //ul.blog__numbers
+        //li.blog__number
+          //a.blog__next(href="#" target="_self") 1
+        //li.blog__number
+          //a.blog__next(href="#" target="_self") 2
+        //li.blog__number
+          //a.blog__next(href="#" target="_self") 3
+        //li.blog__number
+          //a.blog__next(href="#" target="_self") 4
+        //li.blog__number
+          //a.blog__next(href="#" target="_self") 5
+    .blog__line

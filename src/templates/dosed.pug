@@ -1,0 +1,12 @@
+doctype html
+html
+  include components/head
+  +head("Ежедневная доза")
+  body
+    include components/header
+    +header_title("dosed.")
+    main.content
+      include components/dosed
+    include components/footer
+    include components/popup
+    script(src="../js/app.min.js")

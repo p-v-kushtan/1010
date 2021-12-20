@@ -1,0 +1,127 @@
+.details {
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    margin-top: 100px;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+    position: relative;
+    line-height: 90px;
+    z-index: -1;
+    font-size: 150px;
+    overflow: hidden;
+
+    &:after {
+      content: "What’s stopping you?";
+      font-size: 45px;
+      font-weight: 300;
+      text-align: center;
+      color: var(--main-basic-color);
+      position: absolute;
+      z-index: 2;
+    }
+
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__block {
+    margin: 100px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__headline {
+    color: var(--second-basic-color);
+    margin: 0 40px 0 20px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container--dosed {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    // width: 50%;
+    margin-right: 50px;
+  }
+
+  &__boxing {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__boxing--theory {
+    margin-top: 50px;
+  }
+
+  &__text {
+    max-width: 300px;
+    min-height: 375px;
+    transform: translateX(40px);
+  }
+
+  // &__text--dosed {
+  //   margin-left: 0;
+  //   text-align: right;
+  //   transform: translateX(-40px);
+  // }
+
+  &__images {
+    max-height: 500px;
+  }
+
+  // &__img {
+  //   box-shadow: 20px 20px var(--second-light-color);
+  // }
+
+  &__img--theory {
+    background-image: url(../img/theorypic.jpg);
+    background-size: cover;
+    box-shadow: -20px 20px var(--second-light-color);
+  }
+
+  &__img--dosed {
+    background-image: url(../img/dosedpic.jpg);
+    background-size: cover;
+    box-shadow: 20px 20px var(--second-light-color);
+  }
+
+  &__img--leaf {
+    height: 264px;
+    background-image: url(../img/langnaturepic.jpg);
+    background-size: cover;
+    box-shadow: -20px 20px var(--second-light-color);
+  }
+
+}

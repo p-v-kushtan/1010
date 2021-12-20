@@ -1,0 +1,22 @@
+-
+  var list = [
+    {text: "почитать.", mod: "glasses", link: "#"},
+    {text: "поcмотреть.", mod: "cinema", link: "#"},
+    {text: "послушать.", mod: "music", link: "#"},
+    {text: "трекеры/планеры.", mod: "trackers", link: "#"},
+    {text: "повторение.", mod: "repeat", link: "#"},
+    {text: "поспрягать глаголы.", mod: "action", link: "#"},
+    {text: "новое слово.", mod: "word", link: "#"},
+    {text: "описать свой день.", mod: "sun", link: "#"},
+    {text: "random.", mod: "random", link: "#"}
+  ]
+
+.dosed
+  .dosed__title
+    .plate.dosed__number 02
+    //.heading.dosed__quote "Practice is a drug."
+  .dosed__container
+    ul.dosed__list
+      each obj in list
+        li.js-open-popup.dosed__item(class="dosed__item--"+obj.mod)
+          btn.dosed__link.tagsub(class="dosed__link--"+obj.mod href=obj.link)= obj.text

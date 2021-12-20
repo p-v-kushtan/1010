@@ -1,0 +1,27 @@
+.slogan {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__mark_top{
+    width: 600px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../img/svg/quote.svg);
+  }
+
+  &__mark_bottom{
+    width: 600px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../img/svg/quote.svg);
+    transform: rotate(180deg);
+  }
+
+}

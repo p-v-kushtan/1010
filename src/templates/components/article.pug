@@ -1,0 +1,103 @@
+-
+  var blocks = [
+    {caption: "Языковой барьер", image: "../img/article1.jpg", date: "27 august 2020"},
+    {caption: "Have и have got", image: "../img/article2.jpg", date: "27 august 2020"},
+    {caption: "Поэзия на изуча...", image: "../img/article3.jpeg", date: "27 august 2020"}
+  ]
+
+.article
+  .article__container
+    .article__search
+      label.article__label(for="search")
+      input.article__input(type="search" name="Search" placeholder="Search..." value="" onfocus="ClearText(this)")
+    .article__tags
+      ul.article__list
+        li.article__item
+          a.article__link(href="#" target="_self") Experience
+        li.article__item
+          a.article__link(href="#" target="_self") Grammar
+      ul.article__list
+        li.article__item
+          a.article__link(href="#" target="_self") Books & Films
+        li.article__item
+          a.article__link(href="#" target="_self") Recipes
+    .article__posts
+      .article__title Popular posts:
+      .article__box
+        img.article__img(src="../img/article1.jpg" alt="article wallpaper" width="100" height="60")
+        .article__shortags
+          .article__tag
+            a.article__links(href="#" target="_self") Языковой барьер
+          .article__date 27 october 2020
+      .article__box
+        img.article__img(src="../img/patreon.jpg" alt="article wallpaper" width="100" height="60")
+        .article__shortags
+          .article__tag
+            a.article__links(href="#" target="_self") Как создать самому среду
+          .article__date 27 october 2020
+      .article__box
+        img.article__img(src="../img/langbook.jpg" alt="article wallpaper" width="100" height="60")
+        .article__shortags
+          .article__tag
+            a.article__links(href="#" target="_self") Времена во всех языках
+          .article__date 27 october 2020
+  .article__section
+    .article__article
+      .article__boxer
+        .article__name
+          a.article__links(href="#" target="_self") Experience
+        a.article__caption(href="#" target="_self") Языковой барьер
+        .article__date 27 august 2020
+      a.article__image(href="#" target="_self")
+        img.article__poster(src="../img/article1.jpg" alt="article wallpaper" width="100%" height="100%")
+      .article__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .article__subtitle Lorem ipsum
+      .article__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .article__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .article__subtitle Lorem ipsum
+      .article__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .article__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .article__hashtags
+        a.article__hashtag(href="#" target="_self") Языковойбарьер
+        a.article__hashtag(href="#" target="_self") Путешествия
+        a.article__hashtag(href="#" target="_self") Язык
+        button.article__share Share
+      .article__line
+      .article__boxing
+        .article__sutitling Читать ещё:
+        .article__package
+          each block in blocks
+            .article__suggestions
+              a.article__linked(href="#" target="_self")
+                img.article__img(src= block.image alt="article wallpaper" width="129" height="76")
+              a.article__links(href="#" target="_self")= block.caption
+              .article__date= block.date
+      .article__line
+      .article__wrapper
+        .article__sutitling комментарии:
+        .article__package
+            a.article__avatar(href="#" target="_self")
+              img.article__avatar_img(src="../img/article1.jpg" alt="user avatar" width="50" height="50")
+            .article__user
+              .article__wrapping
+                .article__username Christina J.
+                .article__date 23 october 2020
+              .article__comment Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              button.article__btn(type="button") reply...
+      .article__line
+        .article__wrapper
+          .article__sutitling оставить отзыв:
+          .article__form(method="post" action="send_mail.php")
+            .article__form_wrapper
+              .article__form_wrap
+                label.article__label(for="name")
+                input.article__form_input(id="name" type="text" name="first_name" placeholder="Name" value="")
+              .article__form_wrap
+                label.article__label(for="email")
+                input.article__form_input(id="email" type="email" name="email" placeholder="Mail" value="")
+            .article__form_wrap
+              label.article__label(for="textarea")
+              textarea.article__textarea(id="textarea" placeholder="Message" name="comments" maxlength="409")  
+            button.article__button(type="button") GO!
+        
+      

@@ -1,0 +1,22 @@
+-
+  var list = [
+    {text: "главная.", link: "index.html"},
+    {text: "о нас.", link: "about.html"},
+    {text: "блог.", link: "blog.html"},
+    {text: "теория.", link: "theory.html"},
+    {text: "доза.", link: "dosed.html"}
+  ]
+
+mixin header_title(title)
+  header.header
+    .nav
+      ul.nav__list
+        each obj in list
+          li.nav__item
+            a.nav__link(href=obj.link target="_self")= obj.text
+    div
+      h1.header__title= title
+    div.header__burger
+      div.header__line
+      div.header__line
+      div.header__line

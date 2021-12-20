@@ -1,0 +1,35 @@
+-
+  var columns = [
+    {
+      title: "01", 
+      mod: "theory", 
+      link: "theory.html", 
+      subtitle: "теория.", 
+      text: "Разбираем основы грамматики и размещаем их на одном листе - это называется грамматическая карта #mgramap. Дальше вы можете заниматься сами с помощью карты, планера и ежедневной дозы."
+    }, {
+      title: "02", 
+      mod: "dosed", 
+      link: "dosed.html", 
+      subtitle: "доза.", 
+      text: "Практика основ на каждый день таким способом, каким вы любите. Вооружитесь #mgramap - и вперёд!"
+    }, {
+      title: "03", 
+      mod: "leaf", 
+      link: "#", 
+      subtitle: "языковая среда.", 
+      text: "Это самый важный этап, за который никому никогда не нужно платить - создайте языковую среду для себя сами!"
+    }
+  ]
+      
+section.block
+  .block__container
+    each column in columns
+      .block__column
+        h3.plate.block__title= column.title
+        .block__line
+        .block__btn
+          .block__title_btn
+            a.block__link(class="block__link--"+column.mod href=column.link)
+        .block__line
+        .tagline.block__subtitle= column.subtitle
+        .block__text.paragraph= column.text
